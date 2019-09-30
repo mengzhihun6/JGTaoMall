@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="LNMainCenterReusableView" customModule="TaoKeThird" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMH-gb-FnK">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="综合">
+                        <color key="titleColor" red="0.53370227613972354" green="0.53050645412691078" blue="0.5368980981525362" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.15733308877079927" green="0.15639097446678249" blue="0.15827520307481602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="selectAction1:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="4KE-Xs-3qe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Evb-ZL-WHe">
+                    <rect key="frame" x="94" y="0.0" width="93.5" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="佣金">
+                        <color key="titleColor" red="0.53370227609999998" green="0.53050645409999997" blue="0.53689809820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.15733308879999999" green="0.1563909745" blue="0.15827520310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="selectAction2:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="kxU-fy-Laa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkE-K3-k0i">
+                    <rect key="frame" x="187.5" y="0.0" width="94" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="销量">
+                        <color key="titleColor" red="0.53370227609999998" green="0.53050645409999997" blue="0.53689809820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.15733308879999999" green="0.1563909745" blue="0.15827520310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="selectAction3:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="O6q-4F-bFK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOv-lC-8Qp">
+                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="价格">
+                        <color key="titleColor" red="0.53370227609999998" green="0.53050645409999997" blue="0.53689809820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <state key="selected" image="icon_arrow_switch">
+                        <color key="titleColor" red="0.15733308879999999" green="0.1563909745" blue="0.15827520310000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="selectAction4:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="16u-MR-f8a"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Evb-ZL-WHe" firstAttribute="height" secondItem="AMH-gb-FnK" secondAttribute="height" id="45d-Lf-w9w"/>
+                <constraint firstItem="OkE-K3-k0i" firstAttribute="width" secondItem="AMH-gb-FnK" secondAttribute="width" id="4cX-jP-fkM"/>
+                <constraint firstItem="Evb-ZL-WHe" firstAttribute="leading" secondItem="AMH-gb-FnK" secondAttribute="trailing" id="5aa-TO-pVl"/>
+                <constraint firstItem="OkE-K3-k0i" firstAttribute="centerY" secondItem="AMH-gb-FnK" secondAttribute="centerY" id="7Il-Cs-QzX"/>
+                <constraint firstItem="IOv-lC-8Qp" firstAttribute="leading" secondItem="OkE-K3-k0i" secondAttribute="trailing" id="7WT-tM-EKw"/>
+                <constraint firstItem="Evb-ZL-WHe" firstAttribute="width" secondItem="AMH-gb-FnK" secondAttribute="width" id="8Kv-2m-9K7"/>
+                <constraint firstItem="OkE-K3-k0i" firstAttribute="height" secondItem="AMH-gb-FnK" secondAttribute="height" id="Ce6-Le-YXX"/>
+                <constraint firstItem="IOv-lC-8Qp" firstAttribute="centerY" secondItem="AMH-gb-FnK" secondAttribute="centerY" id="MGb-Zv-8je"/>
+                <constraint firstItem="IOv-lC-8Qp" firstAttribute="width" secondItem="AMH-gb-FnK" secondAttribute="width" id="PaC-r7-utW"/>
+                <constraint firstItem="IOv-lC-8Qp" firstAttribute="height" secondItem="AMH-gb-FnK" secondAttribute="height" id="Tjd-sr-ZsL"/>
+                <constraint firstItem="Evb-ZL-WHe" firstAttribute="centerY" secondItem="AMH-gb-FnK" secondAttribute="centerY" id="hLq-fC-M9e"/>
+                <constraint firstItem="OkE-K3-k0i" firstAttribute="leading" secondItem="Evb-ZL-WHe" secondAttribute="trailing" id="nyN-4Y-oeC"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="AMH-gb-FnK" secondAttribute="bottom" id="u0k-qG-mV9"/>
+                <constraint firstItem="AMH-gb-FnK" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="vmq-UZ-0Kl"/>
+                <constraint firstItem="AMH-gb-FnK" firstAttribute="width" secondItem="U6b-Vx-4bR" secondAttribute="width" multiplier="1/4" id="vq0-XQ-16V"/>
+                <constraint firstItem="AMH-gb-FnK" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="xik-SS-Wpn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="button1" destination="AMH-gb-FnK" id="MM0-7r-iVm"/>
+                <outlet property="button2" destination="Evb-ZL-WHe" id="Ked-wl-WdW"/>
+                <outlet property="button3" destination="OkE-K3-k0i" id="nUB-O4-T0k"/>
+                <outlet property="button4" destination="IOv-lC-8Qp" id="Ukx-be-o44"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="138.53073463268368"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="icon_arrow_switch" width="5" height="10"/>
+    </resources>
+</document>

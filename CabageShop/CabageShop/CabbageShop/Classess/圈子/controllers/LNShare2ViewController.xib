@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LNShare2ViewController" customModule="CabbageShop" customModuleProvider="target">
+            <connections>
+                <outlet property="bg_view" destination="GLR-aF-Fuy" id="iau-9n-AWy"/>
+                <outlet property="button1" destination="Wwg-Bw-gzL" id="EwK-mo-7MY"/>
+                <outlet property="button2" destination="j1A-t6-zJz" id="N57-Gi-yhL"/>
+                <outlet property="button3" destination="4o2-fG-D8p" id="bSH-7W-EXe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLR-aF-Fuy">
+                    <rect key="frame" x="0.0" y="485" width="375" height="182"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享方式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivU-ny-3Eh">
+                            <rect key="frame" x="0.0" y="10" width="375" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="ou2-Gu-kFr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*由于新版微信调整了分享策略，如遇到多图无法分享至朋友圈，请先保存图片 再打开微信分享。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYM-td-6He">
+                            <rect key="frame" x="10" y="47" width="355" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ahG-GE-oaN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="0.82745098039215681" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwg-Bw-gzL">
+                            <rect key="frame" x="0.0" y="82" width="125" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="EtF-Vr-DEj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="保存图片" image="icon_save">
+                                <color key="titleColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="chooseSharePalatm:" destination="-1" eventType="touchUpInside" id="1Ae-yU-eLV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1A-t6-zJz">
+                            <rect key="frame" x="125" y="82" width="125" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="Frp-nU-Md8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="微信" image="share_weixin">
+                                <color key="titleColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="chooseSharePalatm:" destination="-1" eventType="touchUpInside" id="Qyk-D8-isP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o2-fG-D8p">
+                            <rect key="frame" x="250" y="82" width="125" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="XuN-G2-AeQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="朋友圈" image="share_timeline">
+                                <color key="titleColor" red="0.31764705882352939" green="0.31764705882352939" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <connections>
+                                <action selector="chooseSharePalatm:" destination="-1" eventType="touchUpInside" id="eKu-Bn-LQo"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9WN-zm-tZ2">
+                            <rect key="frame" x="0.0" y="37" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="TEt-ul-SKx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4o2-fG-D8p" firstAttribute="height" secondItem="Wwg-Bw-gzL" secondAttribute="height" id="4O3-yD-JiB"/>
+                        <constraint firstItem="Wwg-Bw-gzL" firstAttribute="leading" secondItem="GLR-aF-Fuy" secondAttribute="leading" id="7uF-pq-y7M"/>
+                        <constraint firstAttribute="bottom" secondItem="Wwg-Bw-gzL" secondAttribute="bottom" id="B78-Yp-hLq"/>
+                        <constraint firstAttribute="trailing" secondItem="ivU-ny-3Eh" secondAttribute="trailing" id="D7p-Gm-VJu"/>
+                        <constraint firstItem="4o2-fG-D8p" firstAttribute="width" secondItem="Wwg-Bw-gzL" secondAttribute="width" id="EPA-aS-jeN"/>
+                        <constraint firstItem="ivU-ny-3Eh" firstAttribute="top" secondItem="GLR-aF-Fuy" secondAttribute="top" constant="10" id="LOk-qa-xnL"/>
+                        <constraint firstAttribute="height" constant="182" id="M1o-eo-6ur"/>
+                        <constraint firstItem="ivU-ny-3Eh" firstAttribute="leading" secondItem="GLR-aF-Fuy" secondAttribute="leading" id="OAV-8Z-khY"/>
+                        <constraint firstItem="9WN-zm-tZ2" firstAttribute="top" secondItem="ivU-ny-3Eh" secondAttribute="bottom" constant="6" id="Pb7-F5-3VR"/>
+                        <constraint firstItem="Wwg-Bw-gzL" firstAttribute="width" secondItem="GLR-aF-Fuy" secondAttribute="width" multiplier="1/3" id="QDI-wY-DRk"/>
+                        <constraint firstItem="4o2-fG-D8p" firstAttribute="centerY" secondItem="Wwg-Bw-gzL" secondAttribute="centerY" id="QTC-kN-fPe"/>
+                        <constraint firstItem="eYM-td-6He" firstAttribute="leading" secondItem="GLR-aF-Fuy" secondAttribute="leading" constant="10" id="Vay-Ws-dmV"/>
+                        <constraint firstAttribute="trailing" secondItem="eYM-td-6He" secondAttribute="trailing" constant="10" id="cpM-G1-Ecf"/>
+                        <constraint firstItem="eYM-td-6He" firstAttribute="top" secondItem="9WN-zm-tZ2" secondAttribute="bottom" constant="9" id="dYx-of-Ta1"/>
+                        <constraint firstItem="j1A-t6-zJz" firstAttribute="leading" secondItem="Wwg-Bw-gzL" secondAttribute="trailing" id="glP-Jb-HFI"/>
+                        <constraint firstItem="9WN-zm-tZ2" firstAttribute="leading" secondItem="GLR-aF-Fuy" secondAttribute="leading" id="mHZ-7h-pvH"/>
+                        <constraint firstItem="j1A-t6-zJz" firstAttribute="centerY" secondItem="Wwg-Bw-gzL" secondAttribute="centerY" id="pRo-JR-kU9"/>
+                        <constraint firstItem="j1A-t6-zJz" firstAttribute="width" secondItem="Wwg-Bw-gzL" secondAttribute="width" id="poj-R5-Ewe"/>
+                        <constraint firstAttribute="trailing" secondItem="4o2-fG-D8p" secondAttribute="trailing" id="tII-yf-heD"/>
+                        <constraint firstAttribute="trailing" secondItem="9WN-zm-tZ2" secondAttribute="trailing" id="un4-Wu-1ln"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GLR-aF-Fuy" secondAttribute="bottom" id="862-LQ-Oer"/>
+                <constraint firstAttribute="trailing" secondItem="GLR-aF-Fuy" secondAttribute="trailing" id="En7-Hw-1mZ"/>
+                <constraint firstItem="GLR-aF-Fuy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dTP-oP-mqR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="153.37331334332833"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_save" width="50.5" height="50.5"/>
+        <image name="share_timeline" width="50.5" height="50.5"/>
+        <image name="share_weixin" width="50.5" height="50.5"/>
+    </resources>
+</document>

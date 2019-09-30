@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="198" id="KGk-i7-Jjw" customClass="SZYCollectionViewTableViewCell" customModule="CabbageShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="197.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vU-70-eL3">
+                        <rect key="frame" x="0.0" y="51.5" width="375" height="149"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="149" id="If8-6o-fJG"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J62-Ry-gw5">
+                        <rect key="frame" x="10" y="15.5" width="0.0" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="7Ob-Dm-L9e"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="ktJ-fF-0yD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYd-FJ-Y3y">
+                        <rect key="frame" x="325" y="0.0" width="40" height="51.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="ha3-PQ-T8i"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="更多" image="首页更多">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="gengduoButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="c1F-yE-IdE"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J62-Ry-gw5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="45A-GO-vPh"/>
+                    <constraint firstAttribute="trailing" secondItem="8vU-70-eL3" secondAttribute="trailing" id="6zP-yt-gps"/>
+                    <constraint firstAttribute="bottom" secondItem="8vU-70-eL3" secondAttribute="bottom" id="LNS-43-tx2"/>
+                    <constraint firstItem="8vU-70-eL3" firstAttribute="top" secondItem="J62-Ry-gw5" secondAttribute="bottom" constant="15" id="QcY-kb-XFb"/>
+                    <constraint firstItem="OYd-FJ-Y3y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Uob-Nq-wzC"/>
+                    <constraint firstItem="8vU-70-eL3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mCG-FS-f9y"/>
+                    <constraint firstItem="8vU-70-eL3" firstAttribute="top" secondItem="OYd-FJ-Y3y" secondAttribute="bottom" id="p1P-RK-gFj"/>
+                    <constraint firstAttribute="trailing" secondItem="OYd-FJ-Y3y" secondAttribute="trailing" constant="10" id="qXC-UZ-qZH"/>
+                    <constraint firstItem="J62-Ry-gw5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vQI-Se-0Pe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bg_view" destination="8vU-70-eL3" id="E53-98-QPa"/>
+                <outlet property="bg_view_height" destination="If8-6o-fJG" id="wqw-iE-7dJ"/>
+                <outlet property="gengduoBun" destination="OYd-FJ-Y3y" id="Trp-7h-ZQQ"/>
+                <outlet property="titleLable" destination="J62-Ry-gw5" id="zSt-Ed-Vz2"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="133.13343328335833"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="首页更多" width="13.5" height="13.5"/>
+    </resources>
+</document>

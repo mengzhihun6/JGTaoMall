@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等级权益" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3g-FJ-EKS">
+                    <rect key="frame" x="100" y="12" width="120" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="ydx-Sy-m4x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRr-Rb-Rkj">
+                    <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="A9A-Kd-atG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="E3g-FJ-EKS" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="12" id="1de-T2-WKT"/>
+                <constraint firstAttribute="trailing" secondItem="cRr-Rb-Rkj" secondAttribute="trailing" id="58y-id-qXe"/>
+                <constraint firstItem="cRr-Rb-Rkj" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Cyr-CY-pdG"/>
+                <constraint firstAttribute="bottom" secondItem="cRr-Rb-Rkj" secondAttribute="bottom" id="OCF-Qg-nBh"/>
+                <constraint firstItem="E3g-FJ-EKS" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="100" id="W2o-ds-DnV"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="E3g-FJ-EKS" secondAttribute="trailing" constant="100" id="ydq-nR-E2V"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+        </collectionReusableView>
+    </objects>
+</document>

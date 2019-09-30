@@ -1,0 +1,51 @@
+project 'CabbageShop.xcworkspace'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+
+target 'CabbageShop' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Bugly'
+  pod 'SwiftyJSON'              #json解析
+  pod 'SwiftyUserDefaults'      #userdefault
+  pod 'IQKeyboardManagerSwift'  #键盘管理
+  pod 'SnapKit'                 #加约束
+  pod 'Toast'                   #吐司
+  pod 'AFNetworking'            #网络请求
+  #  pod 'SDAutoLayout'
+  pod 'DeviceKit'               #判断机型
+  pod 'JPush'                   #极光推送
+  pod 'SVProgressHUD'           #加载标志
+  pod 'MJRefresh'           #
+  pod 'TZImagePickerController'#图片视频选择
+  
+  pod 'Masonry'
+  
+  pod 'BaiduMobStatCodeless' # 无埋点SDK
+  
+  
+  # 主模块(必须)
+  pod 'mob_sharesdk'
+  
+  # UI模块(非必须，需要用到ShareSDK提供的分享菜单栏和分享编辑页面需要以下1行)
+  pod 'mob_sharesdk/ShareSDKUI'
+  
+  # 平台SDK模块
+  #pod 'mob_sharesdk/ShareSDKPlatforms/WeChat'   #（微信sdk不带支付的命令）
+  pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull' #（微信sdk带支付的命令，和上面不带支付的不能共存，只能选择一个）
+
+  # Pods for CabbageShop
+
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'ZFDownload'
+  pod 'Kingfisher'
+  pod 'Alamofire'
+  pod 'MBProgressHUD'
+
+end

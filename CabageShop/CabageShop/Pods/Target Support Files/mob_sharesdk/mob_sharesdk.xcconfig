@@ -1,0 +1,12 @@
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/MOBFoundation" "${PODS_ROOT}/mob_sharesdk/SDK/ShareSDK" "${PODS_ROOT}/mob_sharesdk/SDK/ShareSDK/Support/Optional" "${PODS_ROOT}/mob_sharesdk/SDK/ShareSDK/Support/PlatformConnector" "${PODS_ROOT}/mob_sharesdk/SDK/ShareSDK/Support/Required"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/mob_sharesdk" "${PODS_ROOT}/Headers/Public"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/mob_sharesdk/SDK/ShareSDK/Support/PlatformSDK/WeChatSDKFull"
+OTHER_LDFLAGS = $(inherited) -l"WeChatSDKFull" -l"sqlite3" -framework "JavaScriptCore"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/mob_sharesdk
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES

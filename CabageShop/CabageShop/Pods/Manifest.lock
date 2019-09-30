@@ -1,0 +1,153 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.7.3)
+  - ASIHTTPRequest (1.8.2):
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
+  - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/CloudFiles (1.8.2):
+    - ASIHTTPRequest/Core
+  - ASIHTTPRequest/Core (1.8.2):
+    - Reachability
+  - ASIHTTPRequest/S3 (1.8.2):
+    - ASIHTTPRequest/Core
+  - BaiduMobStatCodeless (4.9.4)
+  - Bugly (2.5.0)
+  - DeviceKit (1.10.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - JCore (1.2.5)
+  - JPush (3.1.1.1):
+    - JCore (~> 1.2.5)
+  - Kingfisher (4.10.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.15.7)
+  - mob_sharesdk (4.2.0):
+    - mob_sharesdk/ShareSDK (= 4.2.0)
+    - MOBFoundation
+  - mob_sharesdk/ShareSDK (4.2.0):
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/WeChatFull (4.2.0):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKUI (4.2.0):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - MOBFoundation (3.2.0)
+  - Reachability (3.2)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
+  - SnapKit (4.2.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.2.0)
+  - SwiftyUserDefaults (3.0.1)
+  - Toast (4.0.0)
+  - TZImagePickerController (3.1.1)
+  - ZFDownload (1.0.2):
+    - ASIHTTPRequest
+
+DEPENDENCIES:
+  - AFNetworking
+  - Alamofire
+  - BaiduMobStatCodeless
+  - Bugly
+  - DeviceKit
+  - IQKeyboardManagerSwift
+  - JPush
+  - Kingfisher
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - mob_sharesdk
+  - mob_sharesdk/ShareSDKPlatforms/WeChatFull
+  - mob_sharesdk/ShareSDKUI
+  - RxCocoa
+  - RxSwift
+  - SnapKit
+  - SVProgressHUD
+  - SwiftyJSON
+  - SwiftyUserDefaults
+  - Toast
+  - TZImagePickerController
+  - ZFDownload
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Alamofire
+    - ASIHTTPRequest
+    - BaiduMobStatCodeless
+    - Bugly
+    - DeviceKit
+    - IQKeyboardManagerSwift
+    - JCore
+    - JPush
+    - Kingfisher
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - mob_sharesdk
+    - MOBFoundation
+    - Reachability
+    - RxAtomic
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+    - SVProgressHUD
+    - SwiftyJSON
+    - SwiftyUserDefaults
+    - Toast
+    - TZImagePickerController
+    - ZFDownload
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  BaiduMobStatCodeless: 22066f5570e9911307b0d823d01d300acc7d27d3
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  DeviceKit: 2a6cf0d1ec05e2ac7f9b24cdfdb3cb358900a247
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  JCore: 14706de2640b25fb77dbd02332696491407f37c9
+  JPush: 25dd9013fbe106082c14f9f30a82364ee98852fb
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  mob_sharesdk: fc8a9aab921c08e5e88a5b1f36229c6d406a2ff8
+  MOBFoundation: ca11e6640e995875ff755faa56ea324eed260e70
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TZImagePickerController: b33cb21ea66c1ed4c56443a0e8c84494c44be560
+  ZFDownload: a52f94ebb080833b8a8ceb19a409f2941343fe7f
+
+PODFILE CHECKSUM: d43468944f2c12e74d8e6bc84ad3cfba0169ea86
+
+COCOAPODS: 1.5.2

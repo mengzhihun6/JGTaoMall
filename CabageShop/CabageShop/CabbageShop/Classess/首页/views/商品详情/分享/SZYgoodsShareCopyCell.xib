@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="223" id="KGk-i7-Jjw" customClass="SZYgoodsShareCopyCell" customModule="CabbageShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuX-Eb-TIp">
+                        <rect key="frame" x="20" y="13" width="3" height="22"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="MAi-rI-rdI"/>
+                            <constraint firstAttribute="width" constant="3" id="ugM-vo-L4e"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享文案" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTn-EL-Ogf">
+                        <rect key="frame" x="31" y="13.5" width="73.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="4Mf-Ka-aKw"/>
+                            <constraint firstAttribute="height" constant="21" id="szE-G8-eLr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQD-Pz-a4P">
+                        <rect key="frame" x="31" y="50.5" width="334" height="162"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="nnU-Rz-edo"/>
+                        </constraints>
+                        <string key="text">大宝清爽防晒霜专用男女秋冬季学生党面部隔离少女官方旗舰店喷雾\n👇👇👇\n【在售价】￥16.9\n【券后价】￥11.90【免费下载app下单】再返还￥2.36\n【下载链接】https:\/\/www.baidu.com\/\n-----------------\n复制这条信息，￥vorkbuQgbrC￥，打开【手机淘宝】即可抢购</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ZQD-Pz-a4P" secondAttribute="bottom" constant="10" id="6d1-T3-Z6x"/>
+                    <constraint firstItem="ZQD-Pz-a4P" firstAttribute="leading" secondItem="CTn-EL-Ogf" secondAttribute="leading" id="Af3-9u-NRU"/>
+                    <constraint firstItem="ZQD-Pz-a4P" firstAttribute="top" secondItem="CTn-EL-Ogf" secondAttribute="bottom" constant="16" id="AwZ-8p-CRv"/>
+                    <constraint firstItem="wuX-Eb-TIp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Slz-zi-7kW"/>
+                    <constraint firstAttribute="trailing" secondItem="ZQD-Pz-a4P" secondAttribute="trailing" constant="10" id="hcw-7A-dZp"/>
+                    <constraint firstItem="CTn-EL-Ogf" firstAttribute="centerY" secondItem="wuX-Eb-TIp" secondAttribute="centerY" id="jXT-CF-SBz"/>
+                    <constraint firstItem="CTn-EL-Ogf" firstAttribute="leading" secondItem="wuX-Eb-TIp" secondAttribute="trailing" constant="8" id="jZb-o3-d7Y"/>
+                    <constraint firstItem="wuX-Eb-TIp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="mUV-Fh-k3L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="copyLabel" destination="ZQD-Pz-a4P" id="M0D-IT-j0a"/>
+            </connections>
+            <point key="canvasLocation" x="37.600000000000001" y="94.002998500749626"/>
+        </tableViewCell>
+    </objects>
+</document>
