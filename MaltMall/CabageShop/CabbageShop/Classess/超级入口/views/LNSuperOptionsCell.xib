@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LNSuperOptionsCell" customModule="CabbageShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="94" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="94" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodImage_1" translatesAutoresizingMaskIntoConstraints="NO" id="f7W-va-SOD">
+                        <rect key="frame" x="24.5" y="8" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="NF4-lp-Obe"/>
+                            <constraint firstAttribute="height" constant="45" id="kVk-eN-Kck"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="淘宝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fq-F7-Ab4">
+                        <rect key="frame" x="0.0" y="58" width="94" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Wmh-lw-Vbp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="1Fq-F7-Ab4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AKF-EB-MiH"/>
+                <constraint firstAttribute="trailing" secondItem="1Fq-F7-Ab4" secondAttribute="trailing" id="SlT-1c-8aR"/>
+                <constraint firstItem="f7W-va-SOD" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="UOa-sr-Zbk"/>
+                <constraint firstItem="f7W-va-SOD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="aGw-7S-VJA"/>
+                <constraint firstItem="1Fq-F7-Ab4" firstAttribute="top" secondItem="f7W-va-SOD" secondAttribute="bottom" constant="5" id="mzs-lZ-r6U"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="149" height="164"/>
+            <connections>
+                <outlet property="optionImage" destination="f7W-va-SOD" id="NX2-gx-tVN"/>
+                <outlet property="optionTitle" destination="1Fq-F7-Ab4" id="SQ8-uc-Ln4"/>
+            </connections>
+            <point key="canvasLocation" x="28.800000000000001" y="112.44377811094454"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="goodImage_1" width="604" height="540"/>
+    </resources>
+</document>

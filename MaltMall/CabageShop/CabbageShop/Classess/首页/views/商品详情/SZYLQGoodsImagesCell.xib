@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="181" id="KGk-i7-Jjw" customClass="SZYLQGoodsImagesCell" customModule="CabbageShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="180.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaN-mg-RiY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="180.5"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="180.5" id="SD5-xU-cfk"/>
+                        </constraints>
+                    </webView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qaN-mg-RiY" secondAttribute="trailing" id="dgl-l3-9py"/>
+                    <constraint firstItem="qaN-mg-RiY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="i9c-ww-rDn"/>
+                    <constraint firstItem="qaN-mg-RiY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lhr-pM-CPQ"/>
+                    <constraint firstAttribute="bottom" secondItem="qaN-mg-RiY" secondAttribute="bottom" id="tPQ-n1-jHj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="webView" destination="qaN-mg-RiY" id="Uk1-SN-Am4"/>
+                <outlet property="webViewHeight" destination="SD5-xU-cfk" id="CpO-VB-ArC"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="215.44227886056973"/>
+        </tableViewCell>
+    </objects>
+</document>

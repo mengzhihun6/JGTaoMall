@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="nweCellTableViewCell" customModule="CabbageShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="127.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J8s-8T-f9f">
+                        <rect key="frame" x="5" y="0.0" width="365" height="130.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodImage_1" translatesAutoresizingMaskIntoConstraints="NO" id="zjm-wK-2Je">
+                                <rect key="frame" x="5" y="20.5" width="172.5" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="ShC-Ya-NDA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6h-j7-emq">
+                                <rect key="frame" x="5" y="20.5" width="172.5" height="85"/>
+                                <connections>
+                                    <action selector="ershisixiaoshi:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="shM-Y4-LMw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goodImage_1" translatesAutoresizingMaskIntoConstraints="NO" id="033-Pz-dhA">
+                                <rect key="frame" x="187.5" y="20.5" width="172.5" height="85"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szg-3f-kaC">
+                                <rect key="frame" x="187.5" y="20.5" width="172.5" height="85"/>
+                                <connections>
+                                    <action selector="jiudianjiubaoyou:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZTO-hn-c1m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Szg-3f-kaC" firstAttribute="centerX" secondItem="033-Pz-dhA" secondAttribute="centerX" id="1aA-6Y-dEG"/>
+                            <constraint firstItem="033-Pz-dhA" firstAttribute="centerY" secondItem="zjm-wK-2Je" secondAttribute="centerY" id="9It-vS-RdW"/>
+                            <constraint firstItem="q6h-j7-emq" firstAttribute="width" secondItem="zjm-wK-2Je" secondAttribute="width" id="GEn-TP-Tfa"/>
+                            <constraint firstItem="q6h-j7-emq" firstAttribute="centerX" secondItem="zjm-wK-2Je" secondAttribute="centerX" id="Jc2-Ot-afI"/>
+                            <constraint firstItem="zjm-wK-2Je" firstAttribute="top" secondItem="J8s-8T-f9f" secondAttribute="top" constant="20" id="Lev-ID-jdK"/>
+                            <constraint firstItem="zjm-wK-2Je" firstAttribute="leading" secondItem="J8s-8T-f9f" secondAttribute="leading" constant="5" id="MiF-K2-apY"/>
+                            <constraint firstItem="Szg-3f-kaC" firstAttribute="centerY" secondItem="033-Pz-dhA" secondAttribute="centerY" id="QJL-Bv-jUR"/>
+                            <constraint firstItem="Szg-3f-kaC" firstAttribute="height" secondItem="033-Pz-dhA" secondAttribute="height" id="Ur5-Gn-Sb6"/>
+                            <constraint firstItem="033-Pz-dhA" firstAttribute="width" secondItem="zjm-wK-2Je" secondAttribute="width" id="aF3-p0-sPO"/>
+                            <constraint firstItem="033-Pz-dhA" firstAttribute="leading" secondItem="zjm-wK-2Je" secondAttribute="trailing" constant="10" id="cQT-PK-mOf"/>
+                            <constraint firstItem="q6h-j7-emq" firstAttribute="centerY" secondItem="zjm-wK-2Je" secondAttribute="centerY" id="iMV-ed-PKv"/>
+                            <constraint firstItem="q6h-j7-emq" firstAttribute="height" secondItem="zjm-wK-2Je" secondAttribute="height" id="nQV-KP-MQl"/>
+                            <constraint firstItem="Szg-3f-kaC" firstAttribute="width" secondItem="033-Pz-dhA" secondAttribute="width" id="o3T-Db-75t"/>
+                            <constraint firstAttribute="height" constant="130" id="oXd-tt-CDH"/>
+                            <constraint firstItem="zjm-wK-2Je" firstAttribute="centerX" secondItem="J8s-8T-f9f" secondAttribute="centerX" multiplier="1/2" id="vfn-7X-ob5"/>
+                            <constraint firstItem="033-Pz-dhA" firstAttribute="height" secondItem="zjm-wK-2Je" secondAttribute="height" id="zFJ-nB-cv6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J8s-8T-f9f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Ma0-0J-EQI"/>
+                    <constraint firstAttribute="trailing" secondItem="J8s-8T-f9f" secondAttribute="trailing" constant="5" id="gEm-Ln-6aA"/>
+                    <constraint firstAttribute="bottom" secondItem="J8s-8T-f9f" secondAttribute="bottom" id="hea-mB-PDF"/>
+                    <constraint firstItem="J8s-8T-f9f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="s0L-hi-pBg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-178.40000000000001" y="-35.082458770614693"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="goodImage_1" width="302" height="270"/>
+    </resources>
+</document>

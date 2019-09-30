@@ -1,0 +1,53 @@
+project 'CabbageShop.xcworkspace'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+
+target 'CabbageShop' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'Bugly'
+  pod 'SwiftyJSON'              #json解析
+  pod 'SwiftyUserDefaults'      #userdefault
+  pod 'IQKeyboardManagerSwift'  #键盘管理
+  pod 'SnapKit'                 #加约束
+  pod 'Toast'                   #吐司
+  pod 'AFNetworking'            #网络请求
+  #  pod 'SDAutoLayout'
+  pod 'DeviceKit'               #判断机型
+  pod 'JPush'                   #极光推送
+  pod 'SVProgressHUD'           #加载标志
+  pod 'MJRefresh'           #
+  pod 'TZImagePickerController'#图片视频选择
+  
+  pod 'Masonry'
+  
+  pod 'BaiduMobStatCodeless' # 无埋点SDK
+  
+  pod 'mob_sharesdk'
+  pod 'mob_sharesdk/ShareSDKUI'
+  pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull'
+ 
+  # Pods for CabbageShop
+
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'ZFDownload'
+  pod 'Kingfisher'
+  pod 'Alamofire'
+  pod 'MBProgressHUD'
+
+  #------------  JG ----------
+  #pod 'Then'
+  pod 'Reusable'
+  #pod 'Moya'
+  #pod 'HandyJSON', '5.0.0-beta.1'
+  #pod 'Kingfisher'
+
+
+
+end

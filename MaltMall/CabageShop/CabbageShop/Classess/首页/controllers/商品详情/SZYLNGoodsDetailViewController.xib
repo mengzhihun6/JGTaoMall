@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SZYLNGoodsDetailViewController" customModule="CabbageShop" customModuleProvider="target">
+            <connections>
+                <outlet property="bootomView" destination="Che-yp-c3i" id="kxh-TN-UiH"/>
+                <outlet property="collection_label" destination="UQT-GU-GY4" id="9FC-Dk-Iad"/>
+                <outlet property="get_btn" destination="0Gi-fr-MGj" id="c9U-sa-HRH"/>
+                <outlet property="share_btn" destination="NIg-Jd-JVT" id="64L-bx-TEj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbQ-A4-smw">
+                    <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Che-yp-c3i">
+                            <rect key="frame" x="82" y="0.0" width="293" height="55"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIg-Jd-JVT">
+                                    <rect key="frame" x="0.0" y="0.0" width="146.5" height="55"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="分享商品" backgroundImage="分享赚">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="shareAction:" destination="-1" eventType="touchUpInside" id="3IN-Wd-TUq"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-fr-MGj">
+                                    <rect key="frame" x="146.5" y="0.0" width="146.5" height="55"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="领券购买" backgroundImage="购买省">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="lingquanAction:" destination="-1" eventType="touchUpInside" id="4uO-Vf-iop"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="NIg-Jd-JVT" firstAttribute="top" secondItem="Che-yp-c3i" secondAttribute="top" id="O0Y-uh-Jy7"/>
+                                <constraint firstItem="0Gi-fr-MGj" firstAttribute="leading" secondItem="NIg-Jd-JVT" secondAttribute="trailing" id="RmQ-dK-Hhc"/>
+                                <constraint firstItem="0Gi-fr-MGj" firstAttribute="height" secondItem="NIg-Jd-JVT" secondAttribute="height" id="T37-IE-2wd"/>
+                                <constraint firstItem="NIg-Jd-JVT" firstAttribute="leading" secondItem="Che-yp-c3i" secondAttribute="leading" id="Xfu-2p-zF9"/>
+                                <constraint firstItem="0Gi-fr-MGj" firstAttribute="width" secondItem="NIg-Jd-JVT" secondAttribute="width" id="c5H-uR-igK"/>
+                                <constraint firstItem="0Gi-fr-MGj" firstAttribute="centerY" secondItem="NIg-Jd-JVT" secondAttribute="centerY" id="qjJ-kg-0CP"/>
+                                <constraint firstAttribute="bottom" secondItem="NIg-Jd-JVT" secondAttribute="bottom" id="tan-Oz-xBc"/>
+                                <constraint firstItem="NIg-Jd-JVT" firstAttribute="centerX" secondItem="Che-yp-c3i" secondAttribute="centerX" multiplier="1/2" id="zYG-Z8-lGc"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQT-GU-GY4">
+                            <rect key="frame" x="0.0" y="0.0" width="82" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="4eT-8A-XUC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="收藏" image="good_detail_iscollect">
+                                <color key="titleColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="collectAction:" destination="-1" eventType="touchUpInside" id="lPl-NK-0Ml"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="JXp-2p-9mY"/>
+                        <constraint firstItem="Che-yp-c3i" firstAttribute="leading" secondItem="UQT-GU-GY4" secondAttribute="trailing" id="Mz0-Xi-C6v"/>
+                        <constraint firstAttribute="trailing" secondItem="Che-yp-c3i" secondAttribute="trailing" id="Ujy-kp-HeU"/>
+                        <constraint firstAttribute="bottom" secondItem="UQT-GU-GY4" secondAttribute="bottom" id="VCk-90-oEt"/>
+                        <constraint firstAttribute="bottom" secondItem="Che-yp-c3i" secondAttribute="bottom" id="bIp-TD-NQN"/>
+                        <constraint firstItem="Che-yp-c3i" firstAttribute="top" secondItem="nbQ-A4-smw" secondAttribute="top" id="tPF-q7-rLQ"/>
+                        <constraint firstItem="UQT-GU-GY4" firstAttribute="leading" secondItem="nbQ-A4-smw" secondAttribute="leading" id="trP-1T-Hn0"/>
+                        <constraint firstItem="UQT-GU-GY4" firstAttribute="top" secondItem="nbQ-A4-smw" secondAttribute="top" id="y6F-YJ-BKa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nbQ-A4-smw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6lN-9C-AwF"/>
+                <constraint firstItem="nbQ-A4-smw" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="7rp-Ig-faT"/>
+                <constraint firstItem="nbQ-A4-smw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lsK-OM-ku2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="good_detail_iscollect" width="22" height="21"/>
+        <image name="分享赚" width="139.5" height="55"/>
+        <image name="购买省" width="156" height="55"/>
+    </resources>
+</document>

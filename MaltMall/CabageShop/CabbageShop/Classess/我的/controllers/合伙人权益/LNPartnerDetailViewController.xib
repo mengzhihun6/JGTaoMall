@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LNPartnerDetailViewController" customModule="TaoKeThird" customModuleProvider="target">
+            <connections>
+                <outlet property="content" destination="wma-92-cnt" id="xLO-2S-Vzm"/>
+                <outlet property="top_space" destination="6cj-Li-Yja" id="3qM-7W-u5Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xel-gA-78b">
+                    <rect key="frame" x="16" y="62" width="343" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="PIT-Eq-J9Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="权益升级FAQ" image="hehuo_QA">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wma-92-cnt">
+                    <rect key="frame" x="16" y="71" width="343" height="576"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xel-gA-78b" secondAttribute="trailing" constant="16" id="30z-KB-Gzh"/>
+                <constraint firstItem="wma-92-cnt" firstAttribute="top" secondItem="xel-gA-78b" secondAttribute="bottom" constant="8" id="5KJ-pb-yJu"/>
+                <constraint firstItem="xel-gA-78b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="42" id="6cj-Li-Yja"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wma-92-cnt" secondAttribute="bottom" constant="20" id="KLb-nI-luU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wma-92-cnt" secondAttribute="trailing" constant="16" id="Kn8-Qo-Sbc"/>
+                <constraint firstItem="xel-gA-78b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="R40-O8-JYg"/>
+                <constraint firstItem="wma-92-cnt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="dCd-cG-S1g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hehuo_QA" width="19" height="24"/>
+    </resources>
+</document>

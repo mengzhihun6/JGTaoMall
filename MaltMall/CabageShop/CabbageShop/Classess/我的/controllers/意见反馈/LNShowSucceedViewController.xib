@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LNShowSucceedViewController" customModule="TaoKeThird" customModuleProvider="target">
+            <connections>
+                <outlet property="tiplabel" destination="Xge-IW-RPQ" id="pFJ-6A-CWH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_success" translatesAutoresizingMaskIntoConstraints="NO" id="7fT-c9-CMp">
+                    <rect key="frame" x="144" y="201" width="87" height="87"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="87" id="cA9-Ur-dba"/>
+                        <constraint firstAttribute="width" constant="87" id="jz0-DT-Jmd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你的反馈已提交" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xge-IW-RPQ">
+                    <rect key="frame" x="0.0" y="304" width="375" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="aEW-fP-i5x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7fT-c9-CMp" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2t1-h9-d2R"/>
+                <constraint firstItem="7fT-c9-CMp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="181" id="FTM-E6-1LD"/>
+                <constraint firstItem="Xge-IW-RPQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="V9D-qN-LJm"/>
+                <constraint firstItem="Xge-IW-RPQ" firstAttribute="top" secondItem="7fT-c9-CMp" secondAttribute="bottom" constant="16" id="ocu-wa-yXX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xge-IW-RPQ" secondAttribute="trailing" id="usL-V2-Ypm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_success" width="100" height="100"/>
+    </resources>
+</document>
