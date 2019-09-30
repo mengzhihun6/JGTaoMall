@@ -6,8 +6,8 @@
 
 
 ### 本机环境
-    1、 开发环境：Xcode 10.2  
-    2、 语言环境：swift5.0 + Objective-C 
+    1、 开发环境：Xcode 10.2+  
+    2、 语言环境：swift5.0+ 、Objective-C 
 
 
 ### 项目中使用的三方
